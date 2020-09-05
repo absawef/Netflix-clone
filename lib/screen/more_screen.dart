@@ -17,7 +17,7 @@ class MoreScreen extends StatelessWidget{
             Container(
               padding: EdgeInsets.only(top:15),
               child: Text(
-                'admin',
+                'tlqkf',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 25,
@@ -33,7 +33,7 @@ class MoreScreen extends StatelessWidget{
             ),
             Container(
               padding: EdgeInsets.all(10),
-              child: Text('http:// ~~'),    // Linkify(onOpen:(Link async)~~~)
+              child: Text('wdf'),    // Linkify(onOpen:(Link async)~~~)
             ),
             Container(
               padding: EdgeInsets.all(10),

@@ -65,7 +65,7 @@ class TopBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,    // children 간의 간격 유지
         children: <Widget>[
         Image.asset(                       // 좌 상단 넷플릭스 로고
-          'image/Netflix_logo.png',
+          'images/netflix_logo.png',
           fit: BoxFit.contain,
           height:25,
           ),

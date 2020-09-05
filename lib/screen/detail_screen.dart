@@ -120,7 +120,7 @@ class _DetailScreenState extends State<DetailScreen>{
                         onTap: () {
                           setState((){
                             like = !like;
-                            widget.movie.reference.updateData({'like':like});
+                            widget.movie.reference.update({'like':like});
                           });
                         },
                         child: Column(

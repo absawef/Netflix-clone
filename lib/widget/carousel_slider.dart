@@ -1,4 +1,5 @@
 
+import 'package:carousel_slider/carousel_state.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix/model/model_movie.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -20,6 +21,8 @@ class _CarouselImageState extends State<CarouselImage>{
   int _currentPage = 0;
   String _currentKeyword;
 
+
+
   @override
   void initState(){
     super.initState();
@@ -39,14 +42,20 @@ class _CarouselImageState extends State<CarouselImage>{
             padding: EdgeInsets.all(20),
             ),
             CarouselSlider(
-              options: null,
               items: images,
-              carouselController : (index){
-              setState((){
-                _currentPage = index;
-                _currentKeyword = keywords[_currentPage];
-              });
-            },
+              options: CarouselOptions(
+                autoPlay: false,
+                enlargeCenterPage: true,
+                viewportFraction: 0.9,
+                aspectRatio: 2.0,
+                initialPage: 2,
+                carouselController : (index){
+                  setState((){
+                    _currentPage = index;
+                    _currentKeyword = keywords[_currentPage];
+                  });
+                },
+              ),
           ),
           Container(
             padding: EdgeInsets.fromLTRB(0, 10, 0, 3),
